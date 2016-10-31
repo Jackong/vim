@@ -55,9 +55,9 @@ let g:user_emmet_leader_key='<C-Z>'
 Plug 'neomake/neomake'
 let g:neomake_javascript_enabled_makers = ['eslint']
 let g:neomake_jsx_enabled_makers = ['eslint']
-let b:neomake_javascript_eslint_exe = substitute(system('PATH=$(npm bin):$PATH && which eslint'), '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
+let g:neomake_javascript_eslint_exe = substitute(system('PATH=$(npm bin):$PATH && which eslint'), '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
 let g:neomake_css_enabled_makers = ['stylelint']
-let b:neomake_css_stylelint_exe = substitute(system('PATH=$(npm bin):$PATH && which stylelint'), '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
+let g:neomake_css_stylelint_exe = substitute(system('PATH=$(npm bin):$PATH && which stylelint'), '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
 let g:neomake_open_list = 2
 autocmd! BufWritePost * Neomake
 
