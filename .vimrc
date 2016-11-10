@@ -27,7 +27,7 @@ Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'suan/vim-instant-markdown'
 let g:vim_markdown_folding_disabled = 1
-let g:instant_markdown_autostart = 1
+let g:instant_markdown_autostart = 0
 
 " golang
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
