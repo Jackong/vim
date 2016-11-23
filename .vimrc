@@ -89,6 +89,9 @@ let g:neomake_css_stylelint_exe = substitute(system('PATH=$(npm bin):$PATH && wh
 let g:neomake_open_list = 2
 autocmd! BufWritePost * Neomake
 
+" comment
+Plug 'scrooloose/nerdcommenter'
+
 call plug#end()
 
 filetype plugin on
