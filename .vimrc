@@ -5,7 +5,7 @@ map <C-n> :NERDTreeToggle<CR>
 
 Plug 'tpope/vim-fugitive'
 
-Plug 'c0r73x/neotags.nvim'
+Plug 'c0r73x/neotags.nvim', { 'commit': 'd8f84d' }
 Plug 'majutsushi/tagbar'
 let g:tagbar_ctags_bin='/usr/local/bin/ctags'
 map <C-b> :TagbarToggle<CR>
