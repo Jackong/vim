@@ -11,6 +11,8 @@ let g:tagbar_ctags_bin='/usr/local/bin/ctags'
 map <C-b> :TagbarToggle<CR>
 
 Plug 'ctrlpvim/ctrlp.vim'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+let g:ctrlp_custom_ignore = '\v[\/](\.git|\.hg|\.svn|node_modules)$'
 
 " theme
 Plug 'vim-airline/vim-airline'
@@ -73,6 +75,7 @@ Plug 'bentayloruk/vim-react-es6-snippets'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'vim-scripts/JavaScript-Indent'
 Plug 'mxw/vim-jsx'
+Plug 'posva/vim-vue'
 let g:jsx_ext_required = 0
 
 " html
@@ -82,6 +85,7 @@ let g:user_emmet_leader_key='<C-Z>'
 " lint
 Plug 'neomake/neomake'
 let g:neomake_javascript_enabled_makers = ['eslint']
+let g:neomake_vue_enabled_makers = ['eslint']
 let g:neomake_jsx_enabled_makers = ['eslint']
 let g:neomake_javascript_eslint_exe = substitute(system('PATH=$(npm bin):$PATH && which eslint'), '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
 let g:neomake_css_enabled_makers = ['stylelint']
@@ -92,6 +96,9 @@ autocmd! BufWritePost * Neomake
 " comment
 Plug 'scrooloose/nerdcommenter'
 
+" sync
+Plug 'eshion/vim-sync'
+
 call plug#end()
 
 filetype plugin on
@@ -100,3 +107,4 @@ set background=dark
 colorscheme gruvbox
 
 set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
+set guifont=Fira\ Code:h12
