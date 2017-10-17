@@ -75,7 +75,11 @@ Plug 'bentayloruk/vim-react-es6-snippets'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'vim-scripts/JavaScript-Indent'
 Plug 'mxw/vim-jsx'
+Plug 'othree/html5.vim'
 Plug 'posva/vim-vue'
+syntax include @JS syntax/javascript.vim
+syntax region script keepend start=/<script\?>/ end="</script>" contains=@JS fold
+
 let g:jsx_ext_required = 0
 
 " html
@@ -88,6 +92,7 @@ let g:neomake_javascript_enabled_makers = ['eslint']
 let g:neomake_vue_enabled_makers = ['eslint']
 let g:neomake_jsx_enabled_makers = ['eslint']
 let g:neomake_javascript_eslint_exe = substitute(system('PATH=$(npm bin):$PATH && which eslint'), '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
+let g:neomake_vue_eslint_exe = g:neomake_javascript_eslint_exe
 let g:neomake_css_enabled_makers = ['stylelint']
 let g:neomake_css_stylelint_exe = substitute(system('PATH=$(npm bin):$PATH && which stylelint'), '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
 let g:neomake_open_list = 2
