@@ -77,6 +77,7 @@ Plug 'vim-scripts/JavaScript-Indent'
 Plug 'mxw/vim-jsx'
 Plug 'othree/html5.vim'
 Plug 'posva/vim-vue'
+Plug 'wavded/vim-stylus'
 syntax include @JS syntax/javascript.vim
 syntax region script keepend start=/<script\?>/ end="</script>" contains=@JS fold
 
