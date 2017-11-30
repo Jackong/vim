@@ -87,6 +87,9 @@ let g:jsx_ext_required = 0
 Plug 'mattn/emmet-vim'
 let g:user_emmet_leader_key='<C-Z>'
 
+" graphql
+Plug 'jparise/vim-graphql'
+
 " lint
 Plug 'neomake/neomake'
 let g:neomake_javascript_enabled_makers = ['eslint']
