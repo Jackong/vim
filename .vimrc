@@ -35,7 +35,7 @@ let g:instant_markdown_autostart = 0
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 
-"
+"flow
 Plug 'flowtype/vim-flow'
 
 " golang
