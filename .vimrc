@@ -31,6 +31,13 @@ Plug 'suan/vim-instant-markdown'
 let g:vim_markdown_folding_disabled = 1
 let g:instant_markdown_autostart = 0
 
+" typescript
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
+
+"
+Plug 'flowtype/vim-flow'
+
 " golang
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 au FileType go nmap <leader>r <Plug>(go-run)
@@ -107,6 +114,9 @@ Plug 'scrooloose/nerdcommenter'
 
 " sync
 Plug 'eshion/vim-sync'
+
+" jenkins
+Plug 'martinda/Jenkinsfile-vim-syntax'
 
 call plug#end()
 
