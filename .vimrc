@@ -37,7 +37,6 @@ Plug 'peitalin/vim-jsx-typescript'
 
 "flow
 Plug 'flowtype/vim-flow'
-let g:flow#flowpath = substitute(system('PATH=$(npm bin):$PATH && which flow'), '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
 
 " golang
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
