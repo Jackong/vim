@@ -37,6 +37,7 @@ Plug 'peitalin/vim-jsx-typescript'
 
 "flow
 Plug 'flowtype/vim-flow'
+let g:flow#autoclose = 1
 
 " golang
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
