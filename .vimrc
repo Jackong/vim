@@ -32,12 +32,12 @@ let g:vim_markdown_folding_disabled = 1
 let g:instant_markdown_autostart = 0
 
 " typescript
-Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
+"Plug 'leafgarland/typescript-vim'
+"Plug 'peitalin/vim-jsx-typescript'
 
 "flow
-Plug 'flowtype/vim-flow'
-let g:flow#autoclose = 1
+"Plug 'flowtype/vim-flow'
+"let g:flow#autoclose = 1
 
 " golang
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
@@ -118,6 +118,11 @@ Plug 'eshion/vim-sync'
 
 " jenkins
 Plug 'martinda/Jenkinsfile-vim-syntax'
+
+" prettier
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'sbdchd/neoformat'
+autocmd BufWritePre *.js,*.ts,*.yaml,*.html,*json Neoformat
 
 call plug#end()
 
